@@ -12,19 +12,19 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">BYC <span>Academy</span></a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link active">About Us</a></li>
-        <li><a href="achievements.html" class="nav-link">Achievements</a></li>
-        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-      </ul>
-      <a href="contact.html" class="btn-enroll">Enroll Now</a>
-      <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-  </nav>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">BYC <span>Academy</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link ">Home</a></li>
+      <li><a href="about.html" class="nav-link active">About Us</a></li>
+      <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+      <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+    </ul>
+    <a href="contact.html" class="btn-enroll">Enroll Now</a>
+    <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
 
   <!-- HERO ABOUT -->
   <section style="padding:0;position:relative;">
@@ -37,7 +37,7 @@
         🏫</div>
       <div class="hero-about-text" style="max-width:540px;">
         <div class="hero-about-badge">OUR LEGACY</div>
-        <h1 style="color:#fff;">Supporting Student Success Since 2012</h1>
+        <h1 style="color:#fff;">Supporting Student Success Since 2019</h1>
         <p style="color:rgba(255,255,255,.75);font-size:.95rem;margin-top:.5rem;">We are a trusted tuition centre
           focused on helping students reach their full potential. Our goal is to provide strong teaching and personal
           support to help every student succeed.</p>
@@ -71,47 +71,100 @@
     </div>
   </section>
 
-  <!-- OUR JOURNEY TIMELINE -->
-  <section class="section bg-gray">
-    <div class="container" style="max-width:800px;">
+  <!-- OUR JOURNEY -->
+  <style>
+    .journey-section {
+      background: #f8faff;
+      padding: 4rem 1rem;
+    }
+    .journey-wrap {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .journey-list {
+      position: relative;
+      padding-left: 2rem;
+      border-left: 2px solid #bfdbfe;
+      margin-top: 2.5rem;
+    }
+    .journey-entry {
+      position: relative;
+      margin-bottom: 2.2rem;
+    }
+    .journey-entry:last-child {
+      margin-bottom: 0;
+    }
+    .journey-entry::before {
+      content: '';
+      position: absolute;
+      left: -2.45rem;
+      top: .35rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #1d4ed8;
+      border: 2px solid #fff;
+      outline: 2px solid #1d4ed8;
+    }
+    .journey-year {
+      display: inline-block;
+      font-size: .72rem;
+      font-weight: 700;
+      color: #1d4ed8;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      padding: .15rem .65rem;
+      border-radius: 4px;
+      letter-spacing: .05em;
+      margin-bottom: .5rem;
+    }
+    .journey-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0f2952;
+      margin-bottom: .3rem;
+    }
+    .journey-desc {
+      font-size: .86rem;
+      color: #64748b;
+      line-height: 1.65;
+    }
+  </style>
+
+  <section class="journey-section">
+    <div class="journey-wrap">
       <div class="section-header center">
         <h2>Our Journey</h2>
+        <p class="text-gray" style="font-size:.9rem;margin-top:.4rem;">A look back at how BYC Academy grew into what it is today.</p>
       </div>
 
-      <div class="timeline" style="max-width: 600px; margin: 0 auto;">
-        <div class="tl-item">
-          <div class="tl-dot active"></div>
-          <div class="tl-year">2014</div>
-          <div class="tl-title">The Beginning</div>
-          <p class="tl-desc">We started as a small tuition centre with a focus on providing quality education and strong
-            academic support to students.</p>
+      <div class="journey-list">
+
+        <div class="journey-entry">
+          <div class="journey-year">2019</div>
+          <div class="journey-title">The Beginning</div>
+          <p class="journey-desc">We started as a small tuition centre with a focus on providing quality education and strong academic support to students.</p>
         </div>
 
-        <div class="tl-item">
-          <div class="tl-dot active"></div>
-          <div class="tl-year">2018</div>
-          <div class="tl-title">Improvement Phase</div>
-          <p class="tl-desc">We enhanced our teaching methods and academic structure to improve student performance and
-            learning experience.</p>
+        <div class="journey-entry">
+          <div class="journey-year">2021</div>
+          <div class="journey-title">Improvement Phase</div>
+          <p class="journey-desc">We enhanced our teaching methods and academic structure to improve student performance and learning experience.</p>
         </div>
 
-        <div class="tl-item">
-          <div class="tl-dot active"></div>
-          <div class="tl-year">2024</div>
-          <div class="tl-title">New Branch Expansion</div>
-          <p class="tl-desc">We expanded by opening a new branch to reach more students and strengthen our learning
-            services.</p>
+        <div class="journey-entry">
+          <div class="journey-year">2024</div>
+          <div class="journey-title">New Branch Expansion</div>
+          <p class="journey-desc">We expanded by opening a new branch to reach more students and strengthen our learning services across Puducherry.</p>
         </div>
 
-        <div class="tl-item" style="padding-bottom: 0;">
-          <div class="tl-dot active" style="box-shadow:0 0 0 3px rgba(29,78,216,.25);"></div>
-          <div class="tl-year">Today</div>
-          <div class="tl-title">Continuous Growth</div>
-          <p class="tl-desc">We continue to grow as a trusted institution, committed to student success and quality
-            education.</p>
+        <div class="journey-entry">
+          <div class="journey-year">Today</div>
+          <div class="journey-title">Continuous Growth</div>
+          <p class="journey-desc">We continue to grow as a trusted institution, committed to student success and quality education.</p>
         </div>
+
       </div>
-
     </div>
   </section>
 
@@ -179,6 +232,25 @@
       color: #0f2952;
       margin: 0 0 .65rem;
     }
+    .m-card-degree {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .35rem;
+      font-size: .78rem;
+      font-weight: 600;
+      color: #1d4ed8;
+      background: linear-gradient(135deg, #eff6ff 0%, #e0ecff 100%);
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: .35rem .7rem;
+      margin: 0 0 .75rem;
+      letter-spacing: .02em;
+    }
+    .m-card-degree .deg-icon {
+      font-size: .85rem;
+      line-height: 1;
+    }
     .m-card-subject {
       display: inline-block;
       font-size: .75rem;
@@ -205,6 +277,7 @@
         <!-- Mentor 1 -->
         <div class="m-card">
           <div class="m-card-name">M. Balaganesh</div>
+          <div class="m-card-degree"><span class="deg-icon">🎓</span> M.Com</div>
           <span class="m-card-subject" style="background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe;">Business Studies</span>
           <span class="m-card-subject" style="background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe;">Physics</span>
         </div>
@@ -212,24 +285,28 @@
         <!-- Mentor 2 -->
         <div class="m-card">
           <div class="m-card-name">N.Iyyappan</div>
+          <div class="m-card-degree"><span class="deg-icon">🎓</span> B.Sc Computer Science</div>
           <span class="m-card-subject" style="background:#ecfeff;color:#0e7490;border-color:#a5f3fc;">Computer Science</span>
         </div>
 
         <!-- Mentor 3 -->
         <div class="m-card">
           <div class="m-card-name">R.Vijay</div>
+          <div class="m-card-degree"><span class="deg-icon">🎓</span> B.Com</div>
           <span class="m-card-subject" style="background:#f5f3ff;color:#7c3aed;border-color:#ddd6fe;">Accounts</span>
         </div>
 
         <!-- Mentor 4 -->
         <div class="m-card">
           <div class="m-card-name">Thanya Sri</div>
+          <div class="m-card-degree"><span class="deg-icon">🎓</span>  B.Sc Computer Science</div>
           <span class="m-card-subject" style="background:#fffbeb;color:#b45309;border-color:#fde68a;">Mathematics</span>
         </div>
 
         <!-- Mentor 5 -->
         <div class="m-card">
           <div class="m-card-name">R.Sakthi</div>
+          <div class="m-card-degree"><span class="deg-icon">🎓</span> B.Sc Computer Science</div>
           <span class="m-card-subject" style="background:#fffbeb;color:#b45309;border-color:#fde68a;">Science</span>
         </div>
 
@@ -245,7 +322,7 @@
         Limited spaces available for the upcoming term.</p>
       <div class="cta-btns">
         <a href="contact.html" class="btn btn-white">Book a Free Consultation →</a>
-        <a href="#" class="btn btn-outline-white">Download Brochure</a>
+        <a href="javascript:void(0)" onclick="downloadBrochure()" class="btn btn-outline-white">Download Brochure</a>
       </div>
     </div>
   </section>
@@ -267,6 +344,7 @@
   </footer>
 
   <script src="main.js"></script>
+  <script src="download.js"></script>
 </body>
 
 </html>
